@@ -102,7 +102,9 @@ h2 {
     margin: 100px 0;
   }
   .image {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    opacity: 0;
   }
   .img {
     border-radius: 20px;
@@ -123,7 +125,7 @@ h2 {
     margin: 15px 0;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   main {
     width: fit-content;
     margin: 0;
@@ -131,12 +133,24 @@ h2 {
     border-radius: 0;
   }
   .image {
+    position: relative;
+    opacity: 1;
     display: flex;
     height: auto;
-    width: 375px;
+    width: 500px;
   }
   .img {
     display: none;
+  }
+}
+@media (max-width: 414px) {
+  .image {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .image {
+    width: 100%;
   }
 }
 @media (max-width: 320px) {
@@ -147,7 +161,7 @@ h2 {
     border-radius: 0;
   }
   .image {
-    width: 320px;
+    width: 100%;
   }
 }
 .attribution {
