@@ -65,7 +65,7 @@ li {
   padding-left: 1.2em;
   padding-bottom: 0.7em;
 }
-.inst li::marker{
+.inst li::marker {
   color: var(--stone-600);
 }
 li::marker,
@@ -151,7 +151,7 @@ h2 {
   }
 }
 .attribution {
-  margin-bottom: 30px;
+  margin: 30px 0;
   font-size: 11px;
   text-align: center;
 }
