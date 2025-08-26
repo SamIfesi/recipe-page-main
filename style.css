@@ -65,13 +65,20 @@ li {
   padding-left: 1.2em;
   padding-bottom: 0.7em;
 }
-.inst li::marker {
-  font-weight: bold;
+.inst li::marker{
+  color: var(--stone-600);
+}
+li::marker,
+td:nth-child(even) {
+  font-weight: 700;
+  color: var(--Brown-800);
 }
 h3 {
   color: var(--Rose-800);
 }
 h2 {
+  font-family: var(--font-headers);
+  font-weight: 400;
   color: var(--Brown-800);
 }
 @media (max-width: 1660px) {
@@ -132,19 +139,19 @@ h2 {
     display: none;
   }
 }
-@media (max-width: 320px){
-  
+@media (max-width: 320px) {
   main {
     width: fit-content;
     margin: 0;
     padding: 0 25px 30px;
     border-radius: 0;
   }
-  .image{
+  .image {
     width: 320px;
   }
 }
 .attribution {
+  margin-bottom: 30px;
   font-size: 11px;
   text-align: center;
 }
