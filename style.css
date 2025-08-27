@@ -102,14 +102,11 @@ h2 {
     margin: 100px 0;
   }
   .image {
-    position: absolute;
-    opacity: 0;
-    width: 640px;
+    display:none;
   }
   .img {
     border-radius: 20px;
-    height: auto;
-    width: 640px;
+    max-lines: 100%;
   }
   .simp h1 {
     font-family: var(--font-headers);
@@ -125,7 +122,7 @@ h2 {
     margin: 15px 0;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   main {
     width: fit-content;
     margin: 0;
@@ -133,35 +130,18 @@ h2 {
     border-radius: 0;
   }
   .image {
-    position: relative;
-    opacity: 1;
-    display: flex;
-    height: auto;
-    width: 500px;
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 2/1;
   }
   .img {
     display: none;
   }
 }
-@media (max-width: 414px) {
-  .image {
-    width: 100%;
-  }
-}
-@media (max-width: 375px) {
-  .image {
-    width: 100%;
-  }
-}
 @media (max-width: 320px) {
   main {
-    width: fit-content;
-    margin: 0;
     padding: 0 25px 30px;
-    border-radius: 0;
-  }
-  .image {
-    width: 100%;
   }
 }
 .attribution {
